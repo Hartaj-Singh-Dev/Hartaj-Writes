@@ -15,7 +15,7 @@ const Home = () => {
               className="rounded-[50%]"
             />
           </div>
-          <div className="">
+          <div className="mt-[1rem]">
             {" "}
             <h1 className="text-[6rem] sm:text-7xl  text-white font-['ClashDisplay']">
               Hartaj <span>&nbsp; Writes</span>
