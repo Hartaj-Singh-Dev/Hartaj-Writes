@@ -22,14 +22,12 @@ const Home = () => {
             </h1>{" "}
           </div>
         </div>
-        <div className="bg-[#153250] w-full  h-[50vh] sm:h-[60vh]">
-          <div className="">
-          <p className="text-9xl text-white font-['Unbounded']">
-         Hartaj Writes , blog by Hartaj Singh <span> Straight Forward and Simple
-            articles </span> <span> on Web Development and Computer Science
+        <div className="bg-[#153250] w-full flex flex-col justify-center items-center text-white font-bold leading-['1'] font-['Unbounded'] text-[3.8rem]  h-[50vh] sm:h-[60vh]">
+          <div className="sm:w-[80vw] w-full">
+         Hartaj Writes , blog by Hartaj Singh </div> <div > Straight Forward and Simple
+            articles </div> <span> on Web Development and Computer Science
           </span>
-          </p>
-          </div>
+          
 
         </div>
       </div>
