@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        <div className=" w-full sm:w-[80vw] flex flex-col justify-center items-center h-[75vh] sm:h-[90vh] ">
+        <div className=" w-full sm:w-[80vw] flex flex-col justify-center items-center h-[80vh] sm:h-[90vh] ">
           <div className="">
             <img src="/Elantepic.jpg" className="rounded-[50%] h-40 w-40 sm:h-60 sm:w-60"  alt="" loading="eager" />
           </div>
@@ -16,10 +16,12 @@ const Home = () => {
             </h1>{" "}
           </div>
         </div>
-        <div className="bg-[#153250] w-full flex flex-col justify-center items-center text-white font-bold leading-['1'] font-['Unbounded'] text-[2rem]  h-[50vh] sm:h-[60vh]">
-          <div className="w-full">
-         Hartaj Writes , blog by Hartaj Singh </div> <div className="" > Straight Forward and Simple
-            articles </div> <div> on Web Development and Computer Science
+        <div className="bg-[#153250] px-2 w-full flex flex-col justify-center items-center text-white font-bold leading-[3.2rem] sm:leading-[4.2rem] md:leading-[5.2rem] lg:leading-[6.2rem] xl:leading-[7.2rem] font-['Unbounded'] tracking-tight  text-3xl  xl:text-[5.5rem] sm:text-[3.7rem] lg:text-[4.7rem]  h-[55vh] sm:h-[90vh]">
+          <div className="w-full mx-1 sm:mx-0 sm:w-[80vw]">
+         Hartaj Writes , blog by Hartaj Singh </div>
+          <div className="w-full mx-1 sm:mx-0 sm:w-[80vw]" > Straight Forward and Simple
+            articles </div> 
+            <div className="w-full mx-1 sm:mx-0 sm:w-[80vw]"> on Web Development and Computer Science
           </div>
           
 
