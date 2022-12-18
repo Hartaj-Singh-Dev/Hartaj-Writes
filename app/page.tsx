@@ -9,24 +9,28 @@ const Home = () => {
           <div>
             <Image
               src={"/Elantepic.jpg"}
-              width={340}
-              height={340}
+              width={345}
+              height={345}
               alt="hartaj's pic"
               className="rounded-[50%]"
             />
           </div>
-          <div className="mt-[1rem]">
+          <div className="mt-[2rem]">
             {" "}
-            <h1 className="text-[6rem] sm:text-7xl  text-white font-['ClashDisplay']">
+            <h1 className="text-[6.4rem] sm:text-7xl  text-white font-['ClashDisplay']">
               Hartaj <span>&nbsp; Writes</span>
             </h1>{" "}
           </div>
         </div>
         <div className="bg-[#153250] w-full  h-[50vh] sm:h-[60vh]">
-          <p>
-            Hartaj Writes , blog by Hartaj Singh Straight Forward and Simple
-            articles on Web Development and Computer Science
+          <div className="">
+          <p className="text-9xl text-white font-['Unbounded']">
+         Hartaj Writes , blog by Hartaj Singh <span> Straight Forward and Simple
+            articles </span> <span> on Web Development and Computer Science
+          </span>
           </p>
+          </div>
+
         </div>
       </div>
     </>
