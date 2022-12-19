@@ -11,7 +11,7 @@ const Home = () => {
           </div>
           <div className="mt-[2rem]">
             {" "}
-            <h1 className="text-[3rem] sm:text-7xl  text-slate-200 font-['ClashDisplay']">
+            <h1 className="text-[3rem] sm:text-7xl  text-slate-200 font-clashDisplay">
               Hartaj <span>&nbsp; Writes</span>
             </h1>{" "}
           </div>
