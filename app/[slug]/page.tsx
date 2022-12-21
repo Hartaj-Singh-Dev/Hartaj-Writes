@@ -11,8 +11,8 @@ export async function generateStaticParams() {
            
         }
 
-          }) 
-
+          })
+          //@ts-ignore
           return AllPosts.map((post: any)=>{
             return {slug:post}
           })
