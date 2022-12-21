@@ -1,7 +1,6 @@
 import fs from "fs"
 import BlogHead from "./BlogHead";
 import matter  from "gray-matter";
-import { JsxElement } from "typescript";
 
 export const getPosts = async () =>{
     const files = await fs.readdirSync("Posts")
@@ -21,8 +20,8 @@ export const getPosts = async () =>{
 };
 
 const Blogs: any = async () => {
-  const posts = await  getPosts();
-  const Posts = posts.props.posts
+  const posts =  await getPosts();
+  const Posts =  posts.props.posts
   return (
     <>
     <section className="w-full min-h-[50vh] flex flex-col justify-center items-center bg-[#071a2d]">
@@ -35,8 +34,8 @@ const Blogs: any = async () => {
             <div>
             
                  {
-                    Posts.map((post, index:number) =>{
-                        return ( <BlogHead key={post.slug} slug={post.slug} article={post.frontmatter} />)
+                   await Posts.map((post, index:number) =>{
+                        return ( <><BlogHead key={post.slug} slug={post.slug} article={post.frontmatter} /></>)
                     })
                 } 
 
