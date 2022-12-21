@@ -1,11 +1,18 @@
+
+
+import Link from 'next/link'
 import React from 'react'
 
-const BlogHead = () => {
+
+const BlogHead = ({slug , article} : any) => {
+ 
   return (
     <>
-    <div>
-        
-    </div>
+    <section>
+      <Link href={`/${slug}`}>
+        <h1>{slug}</h1>
+      </Link>
+    </section>
     </>
   )
 }

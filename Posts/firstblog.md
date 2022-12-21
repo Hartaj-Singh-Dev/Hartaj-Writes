@@ -1,19 +1,16 @@
-
-# h1 Heading 8-)
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
-
-
-## Horizontal Rules
-
-___
+---
+title: 'Next.js 13 app dir Fetch() function'
+metaDesc: 'aguasobisabnlusiovasbviokasmvuhoasdvbso'
+readTime: '15min'
+date: '2021-09-22'
+image: '/images/next.js.jpg'
+tags: 
+   - next.js
+   - React
+   - MERN
 
 ---
 
-***
 
 
 ## Typographic replacements
