@@ -21,7 +21,6 @@ const getPostFrontData =  (slug: any) =>{
 const head =  ({params}: any) => {
   const {slug} = params
   const data = getPostFrontData(slug)
-  console.log(data)
   return (
     <>
   <title>{data.frontmatter.title}</title>
