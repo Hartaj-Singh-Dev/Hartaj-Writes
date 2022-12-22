@@ -28,8 +28,7 @@ const Blog = async ({params}: any) => {
     const Post  = getPostdata(slug)
 
     const [data] = await Promise.all([Post])
-    console.log(data)
-
+  console.log(data)
   return (
     <>
    <Suspense fallback={<p>Loading ...</p>}>

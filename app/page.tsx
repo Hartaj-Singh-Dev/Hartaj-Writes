@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Blogs from "../components/Blogs";
+import Bg from "./Bg";
 
 const Home = () => {
   return (
     <>
+        <Bg/>
       <div className="flex flex-col justify-center items-center">
         <div className=" w-full sm:w-[80vw] flex flex-col justify-center items-center h-screen sm:h-screen  ">
           <div className="">

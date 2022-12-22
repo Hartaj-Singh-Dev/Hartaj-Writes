@@ -13,7 +13,6 @@ export default function RootLayout({ children }: {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap" rel="stylesheet"></link>
       <body className={ClashDisplay.className}>
-        <Bg/>
         {children}
         </body>
     </html>
