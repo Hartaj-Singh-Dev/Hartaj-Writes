@@ -9,6 +9,7 @@ module.exports = {
     extend: {
         fontFamily:{
           clashDisplay:['var(--clash-display)']
+          , Roboto:['var(--font-roboto)']
         }
     },
   },
