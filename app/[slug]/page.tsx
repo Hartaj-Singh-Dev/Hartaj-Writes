@@ -29,17 +29,11 @@ const Blog = async ({params}: any) => {
  
   return (
     <>
-
-  
-    {/* <h1>{data.frontmatter.title}</h1>
-    <h2>{data.frontmatter.readTime}</h2>
-    
-
-    <hr />
-    <p>{data.content}</p> */}
     <section className="w-full min-h-screen flex flex-col bg-[#071a2d] justify-center items-center">
       <div className="w-full min-h-screen p-4 flex flex-col items-center justify-evenly  md:w-[60vw] ">
          <div>   <h1 className="font-clashDisplay text-[3.5rem] leading-normal md:text-8xl font-bold text-slate-100">{data.frontmatter.title}</h1> </div> 
+      <div className='w-full flex justify-start items-center my-7'>  <div className=' bg-[#F9AA5E] p-2'><h2 className="text-slate-200 font-bold text-lg">{data.frontmatter.date}</h2></div>
+       <div className='bg-[#f4f4f4] p-2'> <h2 className="text-[#F9AA5E] font-bold text-lg">{data.frontmatter.readTime}</h2></div> </div>
         <article className="text-slate-300 leading-relaxed  font-medium  antialiased tracking-tight text-[1.3rem]" dangerouslySetInnerHTML={{__html: marked(data.content)}}>
         </article>
        </div>

@@ -2,7 +2,7 @@
 title: 'Next.js 13 app dir Fetch() function'
 metaDesc: 'aguasobisabnlusiovasbviokasmvuhoasdvbso'
 readTime: '15min'
-date: '2021-09-22'
+date: '22-09-2022'
 image: '/images/next.js.jpg'
 tags: 
    - next.js
