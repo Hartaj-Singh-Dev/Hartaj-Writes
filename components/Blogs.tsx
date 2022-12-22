@@ -35,7 +35,7 @@ const Blogs: any = async () => {
             
                  {
                    await Posts.map((post, index:number) =>{
-                        return ( <><BlogHead key={post.slug} slug={post.slug} article={post.frontmatter} /></>)
+                        return ( <><BlogHead key={index} slug={post.slug} article={post.frontmatter} /></>)
                     })
                 } 
 

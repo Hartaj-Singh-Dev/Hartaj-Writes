@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Blogs from "../components/Blogs";
 import Bg from "./Bg";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
     <>
-        <Bg/>
+        <Bg />
       <div className="flex flex-col justify-center items-center">
         <div className=" w-full sm:w-[80vw] flex flex-col justify-center items-center h-screen sm:h-screen  ">
           <div className="">
@@ -31,6 +32,7 @@ const Home = () => {
         </div>
      <Blogs/> 
       </div>
+      <Footer/>
     </>
   );
 };

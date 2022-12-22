@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-  <>
+ 
   <footer className="w-full h-44 bg-[#081a2a] flex flex-col justify-center items-center">
     <div className="w-full sm:w-[70vw] h-full flex flex-col items-center justify-evenly py-2 px-4 sm:px-0 ">
         <div className="flex w-2/3 sm:w-[20rem] justify-evenly items-center">
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
     </div>
   </footer>
-  </>
+ 
   ) 
 }
 

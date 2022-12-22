@@ -3,7 +3,7 @@ import fs from "fs"
 import matter from 'gray-matter';
 //@ts-ignore
 import {marked} from "marked"
-
+import Footer from '../Footer';
 export const dynamicParams = true;
 
 export async function generateStaticParams() {  
@@ -45,7 +45,7 @@ const Blog = async ({params}: any) => {
        </div>
 
     </section>
-
+    <Footer/>
     </>
   )
 }
