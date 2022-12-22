@@ -8,7 +8,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(200px);
+        backdrop-filter: blur(150px);
         transform: rotate(0deg) scale(2) translateY(0%);
         --gradient-color-1: #153250; 
         --gradient-color-2: #090D16; 
