@@ -30,7 +30,7 @@ const Blog = async ({params}: any) => {
   return (
     <>
 
-   <Suspense fallback={<p>Loading ...</p>}>
+  
     {/* <h1>{data.frontmatter.title}</h1>
     <h2>{data.frontmatter.readTime}</h2>
     
@@ -45,7 +45,7 @@ const Blog = async ({params}: any) => {
        </div>
 
     </section>
-    </Suspense> 
+
     </>
   )
 }
