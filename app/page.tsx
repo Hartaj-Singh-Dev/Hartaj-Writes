@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        <div className=" w-full sm:w-[80vw] flex flex-col justify-center items-center h-screen sm:h-[90vh] ">
+        <div className=" w-full sm:w-[80vw] flex flex-col justify-center items-center h-screen sm:h-screen  ">
           <div className="">
             <Image src="/Elantepic.jpg" className="rounded-[50%] h-44 w-44 sm:h-64 sm:w-64" height={350} width={350} alt="" loading="eager" />
           </div>
