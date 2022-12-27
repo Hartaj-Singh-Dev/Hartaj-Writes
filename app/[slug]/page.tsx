@@ -2,8 +2,11 @@ import React, { Suspense } from 'react'
 import fs from "fs"
 import matter from 'gray-matter';
 //@ts-ignore
-import {marked} from "marked"
+// import {marked} from "marked"
+import md from "markdown-it"
 import Footer from '../Footer';
+
+
 export const dynamicParams = true;
 
 export async function generateStaticParams() {  
@@ -34,7 +37,7 @@ const Blog = async ({params}: any) => {
          <div>   <h1 className="font-clashDisplay text-[3.5rem] leading-normal md:text-8xl font-bold text-slate-100">{data.frontmatter.title}</h1> </div> 
       <div className='w-full flex justify-start items-center my-7'>  <div className=' bg-[#F9AA5E] p-2'><h2 className="text-slate-200 font-bold text-lg">{data.frontmatter.date}</h2></div>
        <div className='bg-[#f4f4f4] p-2'> <h2 className="text-[#F9AA5E] font-bold text-lg">{data.frontmatter.readTime}</h2></div> </div>
-        <article className="text-slate-300 leading-relaxed  font-medium  antialiased tracking-tight text-[1.3rem]" dangerouslySetInnerHTML={{__html: marked(data.content)}}>
+        <article className="text-slate-300 prose md:prose-xl prose-headings:text-slate-200 prose-stone prose-blockquote:text-slate-200  w-full flex flex-col items-start  leading-relaxed  font-medium text-2xl antialiased tracking-tight " dangerouslySetInnerHTML={{__html: md().render(data.content)}}>
         </article>
        </div>
 

@@ -1,26 +1,47 @@
 ---
-title: 'Next.js 13 app dir Fetch() function'
-metaDesc: 'aguasobisabnlusiovasbviokasmvuhoasdvbso'
+title: 'CORS explained: Error fixing on both client and server side'
+metaDesc: 'CORS (corss-origin-resouce-sharing) is a policy by web browsers for security purposes and also a option for HTTP request headers to a server to indicate an origin ( domain, URL ), which allows browser to permit loading resources ( scripts  or code ) from other servers '
 readTime: '15min'
-date: '22-09-2022'
-image: '/images/firstblog.jpg'
+date: '26-12-2022'
+image: '/images/cors-example.png'
 tags: 
-   - next.js
-   - React
+   - next.js cors error
+   - React cors error
    - MERN
+   - node.js cors error
+   - cross-origin-resource-sharing policy
+   - Access-Control-Allow-Origin 
+   - HTTPS
+   - request and response
+   - Same Origin
+   - Cors origin
+   - server and client
+   - React
+   - Next.js 
+   - Hartaj Writes
+   - Hartaj Singh Sidhu
+   - Open Source
+
 
 --- 
 
- release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+# Prerequists:-
+ + Having knowledge about how HTTPS works 
+ + Have basic knowledge how web works
+ + Have basic knowledge of server and client architecture 
 
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+___
 
 
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+So, either right now you are stuck at this error or once in your full stack web dev journey have faced it, well either case in this article we will fix it.
+Before fixing any problem, the most crucial thing is to know what is the problem exactly and why is it occurring.
 
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc
+CORS (cross-origin-resource-sharing) is a policy by web browsers for security purposes and also an option for HTTP request headers to a server to indicate an origin ( domain, URL ), which allows the browser to permit loading resources ( scripts or code ) from other servers.
+
+Now let’s use an example, let’s say you are building a website (full-fledged) and on the dashboard page of the website you want to access data from the database which is on this URL (https://api.backend.com/{username}) from the origin (https://frontend.com/dashboard), Now overtop view is that from origin you will make a request to the backend for data using HTTP and server will give you data, now let’s break it down
+ 
+
+
+>GET https://api.backend.com/{username} HTTP/1.1
