@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+*{
+ margin: 0;
+ padding: 0;
+ scroll-behavior: smooth;
+ max-width: 100%;
+
+}
+
  canvas#canvas {
         z-index: -1;
         position: absolute;

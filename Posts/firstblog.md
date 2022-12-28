@@ -24,16 +24,11 @@ tags:
 
 
 --- 
-
-# Prerequists:-
- + Having knowledge about how HTTPS works 
- + Have basic knowledge how web works
- + Have basic knowledge of server and client architecture 
-
-
 ___
-
-
+## Prerequists:-
+ 1. Having knowledge about how HTTPS works 
+ 2. Have basic knowledge how web works
+ 3. Have basic knowledge of server and client architecture 
 
 So, either right now you are stuck at this error or once in your full stack web dev journey have faced it, well either case in this article we will fix it.
 Before fixing any problem, the most crucial thing is to know what is the problem exactly and why is it occurring.
