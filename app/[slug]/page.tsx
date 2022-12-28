@@ -32,7 +32,7 @@ const Blog = async ({ params }: any) => {
         <div className="w-11/12  p-4 flex flex-col items-center justify-evenly sm:3/4 md:w-3/5 ">
           <div>
             {" "}
-            <h1 className="font-clashDisplay text-[3.5rem] leading-normal md:text-[5rem] font-bold text-slate-100">
+            <h1 className="font-clashDisplay text-[3.5rem] leading-tight md:text-[5rem] font-bold text-slate-100">
               {data.frontmatter.title}
             </h1>{" "}
           </div>
