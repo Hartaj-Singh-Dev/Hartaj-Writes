@@ -51,7 +51,7 @@ const Blog = async ({ params }: any) => {
             </div>{" "}
           </div>
           <article
-            className="text-slate-300  prose md:prose-xl prose-headings:text-slate-200 prose-stone prose-hr:text-slate-300 max-w-none prose-blockquote:text-slate-200 w-full   leading-relaxed  font-medium text-xl antialiased tracking-tight "
+            className="text-slate-300  prose prose-a:text-white md:prose-xl prose-headings:text-slate-200 prose-stone prose-hr:text-slate-300 max-w-none prose-blockquote:text-slate-200 w-full   leading-relaxed  font-medium text-xl antialiased tracking-tight "
             dangerouslySetInnerHTML={{ __html: md().render(data.content) }}
           ></article>
         </div>
