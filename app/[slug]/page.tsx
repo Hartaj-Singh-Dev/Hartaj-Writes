@@ -1,10 +1,11 @@
-import React, { Suspense } from "react";
+import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 //@ts-ignore
 // import {marked} from "marked"
 import md from "markdown-it";
 import Footer from "../Footer";
+import Link from "next/link";
 
 export const dynamicParams = true;
 
@@ -51,12 +52,17 @@ const Blog = async ({ params }: any) => {
             </div>{" "}
           </div>
           <article
-            className="text-slate-300  prose prose-a:text-white md:prose-xl prose-headings:text-slate-200 prose-stone prose-hr:text-slate-300 max-w-none prose-blockquote:text-slate-200 w-full   leading-relaxed  font-medium text-xl antialiased tracking-tight "
+            className="text-slate-300  prose prose-a:text-white md:prose-xl prose-headings:text-slate-200 prose-stone prose-hr:text-slate-300 max-w-none prose-blockquote:text-slate-200 w-full   leading-relaxed font-medium   text-xl antialiased tracking-tight "
             dangerouslySetInnerHTML={{ __html: md().render(data.content) }}
           ></article>
+        <div className="hover:brightness-90 w-full my-5  flex items-start ">
+            <h1 className="text-lg text-slate-200 mx-3">Share -</h1>
+          <Link href={`https://twitter.com/intent/tweet?url=https://hartaj-writes.vercel.app/${slug}`}>
+            <i className="fa-brands fa-2x text-blue-500  fa-twitter"></i>
+          </Link> 
         </div>
+        </div> 
       </section>
-      <Footer />
     </>
   );
 };
