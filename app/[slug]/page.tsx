@@ -55,8 +55,8 @@ const Blog = async ({ params }: any) => {
             className="text-slate-300  prose prose-a:text-white md:prose-xl prose-headings:text-slate-200 prose-stone prose-hr:text-slate-300 max-w-none prose-blockquote:text-slate-200 w-full   leading-relaxed font-medium   text-xl antialiased tracking-tight "
             dangerouslySetInnerHTML={{ __html: md().render(data.content) }}
           ></article>
-        <div className="hover:brightness-90 w-full my-5  flex items-start ">
-            <h1 className="text-lg text-slate-200 mx-3">Share -</h1>
+        <div className="hover:brightness-90 w-full my-8  flex items-start ">
+            <h1 className=" text-slate-200 text-3xl font-['Unbounded'] mx-3">Share -</h1>
           <Link href={`https://twitter.com/intent/tweet?url=https://hartaj-writes.vercel.app/${slug}`}>
             <i className="fa-brands fa-2x text-blue-500  fa-twitter"></i>
           </Link> 
