@@ -30,7 +30,7 @@ const Blog = async ({ params }: any) => {
   return (
     <>
       <section className="w-full  flex flex-col bg-[#071a2d] justify-center items-center">
-        <div className="w-11/12  p-4 flex flex-col items-center justify-evenly sm:3/4 md:w-3/5 ">
+        <div className="w-[95%]  p-4 flex flex-col items-center justify-evenly sm:3/4 md:w-3/5 ">
           <div>
             {" "}
             <h1 className="font-clashDisplay text-[3.5rem] leading-tight md:text-[5rem] font-bold text-slate-100">
